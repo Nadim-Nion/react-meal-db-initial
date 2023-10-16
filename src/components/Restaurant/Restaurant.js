@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Meal from '../Meal/Meal';
 import OrderList from '../OrderList/OrderList';
 import './Restaurant.css';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 
 const Restaurant = () => {
     const [meals, setMeals] = useState([]);
@@ -12,6 +13,41 @@ const Restaurant = () => {
             .then(res => res.json())
             .then(data => setMeals(data.meals));
     }, []);
+
+    useEffect(() => {
+        const storedOrder = getStoredCart();
+        const savedOrders = [];
+        for (const id in storedOrder) {
+            const addedOrder = meals.find(meal => meal.idMeal === id);
+            if (addedOrder) {
+                const quantity = storedOrder[id];
+                addedOrder.quantity = quantity;
+                savedOrders.push(addedOrder);
+            }
+
+        }
+        setOrders(savedOrders);
+    }, [meals]);
+
+    const handleAddToOrder = selectedMeal => {
+        // console.log(meal);
+        let newOrders = [];
+        const existedMeal = orders.find(meal => meal.idMeal === selectedMeal.idMeal);
+        if (existedMeal) {
+            const restMeal = orders.filter(meal => meal.idMeal !== selectedMeal.idMeal);
+            existedMeal.quantity = existedMeal.quantity + 1;
+            newOrders = [...restMeal, existedMeal];
+        }
+        else {
+            selectedMeal.quantity = 1;
+            newOrders = [...orders, selectedMeal];
+
+        }
+
+        setOrders(newOrders);
+        addToDb(selectedMeal.idMeal);
+
+    }
     /* 
         The above api link or the below method will now work for search. 
         if you want to implement search in this code. 
@@ -26,7 +62,7 @@ const Restaurant = () => {
         Read carefully, give it a try. [ Ki ache jibone]
         if  you need help, let us know in the support session
     */
-    
+
 
     return (
         <div className="restaurant-menu">
@@ -35,6 +71,7 @@ const Restaurant = () => {
                     meals.map(meal => <Meal
                         key={meal.idMeal}
                         meal={meal}
+                        handleAddToOrder={handleAddToOrder}
                     ></Meal>)
                 }
             </div>
