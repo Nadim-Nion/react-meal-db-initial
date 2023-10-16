@@ -25,7 +25,7 @@ Feel free to customize this description to better suit your project's style and 
 
 GitHub Pages: https://nadim-nion.github.io/react-meal-db-initial/ 
 
-Netlify: 
+Netlify: https://react-mealdb-initial-nion.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
