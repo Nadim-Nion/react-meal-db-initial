@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+# MealDB Order Management Website
+
+---
+## Description
+
+Welcome to the MealDB Order Management Website! This project allows users to add their favorite meals to an order list, offering a seamless and interactive dining experience. Key features of this web application include:
+
+## Key Features:
+
+1. **Persistent Order Data:** Unlike many other meal order apps, the data in your order list won't disappear when you reload the webpage. This ensures that you won't lose your carefully curated list of meals, even if you accidentally refresh the page.
+
+2. **Local Storage:** We've implemented local storage to securely save all your order data directly in your browser. This means your order list is available every time you return to the website, making the ordering process more convenient.
+
+3. **Interactive User Experience:** We've designed the website to be highly interactive, providing a seamless and user-friendly experience for managing your meal orders. Whether you're adding or removing items, the website responds in real-time to your actions.
+
+We believe that good food should be easy to order, and this MealDB website is here to make your dining experience hassle-free and enjoyable. Feel free to explore the code, contribute, or use this project as a reference for building your own interactive web applications.
+
+We're excited to have you here and hope you find this project useful and inspiring.
+
+---
+
+Feel free to customize this description to better suit your project's style and personality.
+
+## Live Website:
+
+GitHub Pages: https://nadim-nion.github.io/react-meal-db-initial/ 
+
+Netlify: 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
