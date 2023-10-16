@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-meal-db-initial/static/css/main.396a7078.chunk.css",
+    "main.js": "/react-meal-db-initial/static/js/main.d90dcf01.chunk.js",
+    "main.js.map": "/react-meal-db-initial/static/js/main.d90dcf01.chunk.js.map",
+    "runtime-main.js": "/react-meal-db-initial/static/js/runtime-main.33760eff.js",
+    "runtime-main.js.map": "/react-meal-db-initial/static/js/runtime-main.33760eff.js.map",
+    "static/js/2.3652968d.chunk.js": "/react-meal-db-initial/static/js/2.3652968d.chunk.js",
+    "static/js/2.3652968d.chunk.js.map": "/react-meal-db-initial/static/js/2.3652968d.chunk.js.map",
+    "static/js/3.57dfd1c1.chunk.js": "/react-meal-db-initial/static/js/3.57dfd1c1.chunk.js",
+    "static/js/3.57dfd1c1.chunk.js.map": "/react-meal-db-initial/static/js/3.57dfd1c1.chunk.js.map",
+    "index.html": "/react-meal-db-initial/index.html",
+    "static/css/main.396a7078.chunk.css.map": "/react-meal-db-initial/static/css/main.396a7078.chunk.css.map",
+    "static/js/2.3652968d.chunk.js.LICENSE.txt": "/react-meal-db-initial/static/js/2.3652968d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-meal-db-initial/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33760eff.js",
+    "static/js/2.3652968d.chunk.js",
+    "static/css/main.396a7078.chunk.css",
+    "static/js/main.d90dcf01.chunk.js"
+  ]
+}
