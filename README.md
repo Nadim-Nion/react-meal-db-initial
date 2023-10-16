@@ -1,7 +1,7 @@
 # MealDB Order Management Website
 
 ---
-## Description
+## Description (React SPA)
 
 Welcome to the MealDB Order Management Website! This project allows users to add their favorite meals to an order list, offering a seamless and interactive dining experience. Key features of this web application include:
 
